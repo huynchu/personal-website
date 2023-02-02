@@ -48,13 +48,23 @@ body {
 }
 
 /* ============================== */
+/* HEADER SECTION                 */
+/* ============================== */
+.header {
+  height: 100vh;
+  background-color: #071e33;
+  position: relative;
+  background-image: linear-gradient(rgba(22, 22, 22, 0.6), transparent);
+}
+
+/* ============================== */
 /* NAVBAR SECTION                 */
 /* ============================== */
 
-.navbar {
+.nav-bar {
   display: flex;
-  justify-content: flex-end;
-  background-color: #071e33;
+  justify-content: space-between;
+  /* background-color: #071e33; */
   align-items: center;
 
   /* Fixed height for sticky */
@@ -62,10 +72,12 @@ body {
   padding: 0 4.8rem;
 }
 
-.navbar span {
+.logo {
+  font-family: "Lora", serif;
+  font-style: italic;
   font-size: 3.2rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: #fff;
 }
 
@@ -101,29 +113,83 @@ body {
 /* ============================== */
 
 .section-hero {
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 0 0;
   color: #fff;
-  background-color: #071e33;
+  background-color: transparent;
 }
 
 .about {
   display: grid;
-  grid-template-columns: 25fr 75fr;
+  max-width: 120rem;
+  grid-template-columns: 70fr 30fr;
   align-items: center;
   justify-items: center;
-  gap: 9.6rem;
+  gap: 12.8rem;
+  /* margin: 0 auto; */
+  padding: 0 9.6rem;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .profile-picture {
   width: 100%;
   border-radius: 50%;
-  /* border: 2px solid rgba(255, 255, 255, 0.5); */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 0;
 }
 
-.intro {
-  text-align: center;
-  font-size: 1.6rem;
-  line-height: 1.6;
+.profile-pic-box {
+  position: relative;
+}
+
+.profile-pic-box::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 85%;
+  padding-bottom: 85%;
+  /* border-radius: 50%; */
+  background-color: transparent;
+  border: 3px solid rgba(221, 221, 221, 0.8);
+  z-index: -1;
+
+  transform: translate(-50%, -50%);
+}
+
+.profile-pic-box::before {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  content: "";
+  width: 40%;
+  padding-bottom: 40%;
+  background-color: transparent;
+  border: 3px solid rgba(221, 221, 221, 0.5);
+  z-index: -1;
+
+  transform: translate(-50%, -50%);
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.intro-text strong {
+  display: inline-block;
+  line-height: 1.2;
+  padding: 0 1rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #222;
+  background-color: #ddd;
+  border-radius: 3px;
 }
 
 /* ============================== */
@@ -131,11 +197,22 @@ body {
 /* ============================== */
 
 .section-education {
-  padding: 0rem 0 9.6rem 0;
-  color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+  color: #333;
   background-color: #071e33;
 }
 
+.date {
+  font-size: 1.2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 1.4rem;
+}
 /* ============================== */
 /* PROJECTS SECTION               */
 /* ============================== */
@@ -143,4 +220,5 @@ body {
 .section-projects {
   padding: 4.8rem 0 9.6rem 0;
   color: #333;
+  background-color: #071e33;
 }
