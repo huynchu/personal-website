@@ -44,7 +44,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #333;
+  color: #fff;
 }
 
 /* ============================== */
@@ -193,32 +193,131 @@ body {
 }
 
 /* ============================== */
-/* EDUCATION SECTION              */
+/* ABOUT ME SECTION               */
 /* ============================== */
 
-.section-education {
-  padding: 4.8rem 0 9.6rem 0;
-  color: #333;
+.section-about {
+  padding: 4.8rem 0;
   background-color: #071e33;
 }
 
-.date {
-  font-size: 1.2rem;
+.about-me {
+  padding: 0 4.8rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4.8rem;
+  /* min-height: 90rem; */
 }
 
-.list {
+.about-me-list {
   list-style: none;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
-  gap: 1.4rem;
 }
+
+.about-me-catagory {
+  padding: 1rem 2rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s;
+}
+
+.about-me-catagory:hover {
+  color: #b197fc;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.about-me-catagory.active {
+  color: #b197fc;
+  border-left: 2px solid #b197fc;
+}
+
+.about-contents {
+  font-size: 1.4rem;
+}
+
+.hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Education experience content */
+.education-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.8rem;
+  color: #b197fc;
+}
+
+.education-date {
+  color: #bbb;
+  padding-bottom: 2.4rem;
+}
+
+.degree-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Work experience content */
+
+.work-experience {
+  margin-bottom: 4.8rem;
+}
+
+.work-experience:last-child {
+  margin-bottom: 0;
+}
+
+.work-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.work-position {
+  color: #b197fc;
+}
+
+.work-place {
+  color: #eee;
+}
+
+.work-date {
+  color: #bbb;
+  padding-bottom: 2.4rem;
+}
+
+.work-descriptions {
+  color: #bbb;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.work-description {
+  display: flex;
+  gap: 1.8rem;
+  align-items: flex-start;
+}
+
+.work-description i {
+  padding-top: 0.3rem;
+  color: #b197fc;
+}
+
 /* ============================== */
 /* PROJECTS SECTION               */
 /* ============================== */
 
 .section-projects {
-  padding: 4.8rem 0 9.6rem 0;
-  color: #333;
+  padding: 4.8rem 0;
   background-color: #071e33;
 }

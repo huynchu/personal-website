@@ -5,7 +5,7 @@
 
 .container {
   /* 1140px */
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 1px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
   color: #eee;
 }
 
@@ -37,7 +37,7 @@
   font-weight: 500;
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
-  color: rgb(255, 179, 57);
+  color: #b197fc;
 }
 
 .btn:link,
