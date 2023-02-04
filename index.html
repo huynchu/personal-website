@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
     <!-- Style sheets -->
@@ -23,6 +23,43 @@
   </head>
 
   <body>
+    <aside class="contact-bar">
+      <ul class="contact-list">
+        <li class="contact">
+          <a
+            class="contact-icon-link"
+            target="”_blank”"
+            href="https://github.com/huynchu"
+          >
+            <i class="contact-icon fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="contact">
+          <a
+            class="contact-icon-link"
+            target="”_blank”"
+            href="https://www.linkedin.com/in/huy-chu/"
+          >
+            <i class="contact-icon fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="contact">
+          <a
+            class="contact-icon-link"
+            target="”_blank”"
+            href="https://www.instagram.com/huyychu/"
+          >
+            <i class="contact-icon fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="contact">
+          <a class="contact-icon-link" href="/Resume-Huy-Chu.pdf" download>
+            <i class="fa-regular fa-file"></i>
+            <p class="cv">CV</p>
+          </a>
+        </li>
+      </ul>
+    </aside>
     <header class="header">
       <div class="nav-bar">
         <span class="logo">H.C.</span>
@@ -48,7 +85,12 @@
             <a href="#" class="link margin-right-md"
               >Check out my projects &rarr;</a
             >
-            <a href="#" class="link">Contact me &rarr;</a>
+            <a href="/Resume-Huy-Chu.pdf" download class="btn">
+              <div class="resume-btn">
+                <span>My Resume</span>
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </a>
           </div>
           <div class="profile-pic-box">
             <img
@@ -159,9 +201,9 @@
                     </span>
                   </div>
                   <div class="degree-info">
-                    <p class="degree-title">B.S. in Computer Science</p>
+                    <span class="degree-date">Aug 2020 - Dec 2024</span>
                     <div class="degree-subheading">
-                      <span class="degree-date">Aug 2020 - Dec 2024</span>
+                      <p class="degree-title">B.S. in Computer Science</p>
                       <span class="gpa"><strong>3.97/4.00</strong> GPA</span>
                     </div>
                   </div>
@@ -180,6 +222,15 @@
                     <li class="work-description">
                       <i class="fa-sharp fa-solid fa-chevron-right"></i>
                       <span> Active member of RPI Climbing Team </span>
+                    </li>
+                    <li class="work-description">
+                      <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                      <span>
+                        Relevant courses: Data Structures and Algorithms,
+                        Software Design and Documentation, Computer
+                        Architecture, Operating Systems, Principles of
+                        Software</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -237,7 +288,13 @@
             </div>
             <div class="project-desc">
               <div class="actions">
-                <i class="fa-brands fa-github"></i>
+                <a
+                  class="project-icon-link"
+                  target="”_blank”"
+                  href="https://github.com/huynchu/personal-website"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
               </div>
               <p class="project-name">Personal Portfolio Website</p>
               <p class="project-desc-text">
@@ -256,18 +313,24 @@
             <div class="project-img">
               <img
                 class="project-img"
-                src="img/projects-img/Portfolio-page-1.jpg"
+                src="img/projects-img/LAMS.jpg"
                 alt="Portfolio landing page"
               />
             </div>
             <div class="project-desc">
               <div class="actions">
-                <i class="fa-brands fa-github"></i>
+                <a
+                  class="project-icon-link"
+                  target="”_blank”"
+                  href="https://github.com/sdd-lams/learning-assistant-management-system"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
               </div>
               <p class="project-name">LAMS</p>
               <p class="project-desc-text">
-                A fullstack web application allowing Learning Assistants at RPI
-                to manage students.
+                A web tool allowing Learning Assistants at RPI to manage student
+                data and status.
               </p>
               <div class="tags">
                 <span class="tag tag--angular">Angular</span>
@@ -288,7 +351,13 @@
             </div>
             <div class="project-desc">
               <div class="actions">
-                <i class="fa-brands fa-github"></i>
+                <a
+                  class="project-icon-link"
+                  target="”_blank”"
+                  href="https://github.com/huynchu/degree-planner"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
               </div>
               <p class="project-name">Degree Planner</p>
               <p class="project-desc-text">
@@ -300,6 +369,40 @@
                 <span class="tag tag--redux">Redux</span>
                 <span class="tag tag--js">JavaScript</span>
                 <span class="tag tag--python">Python</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                class="project-img"
+                src="img/projects-img/Shuttle-tracker.PNG"
+                alt="Portfolio landing page"
+              />
+            </div>
+            <div class="project-desc">
+              <div class="actions">
+                <a
+                  class="project-icon-link"
+                  target="”_blank”"
+                  href="https://github.com/wtg"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <p class="project-name">
+                Shuttle Tracker <span> (Open Source) </span>
+              </p>
+              <p class="project-desc-text">
+                An web and mobile application to track shuttles at RPI campus
+                used by hundreds of students a semester!
+              </p>
+              <div class="tags">
+                <span class="tag tag--mongo">Vue.js</span>
+                <span class="tag tag--js">JavaScript</span>
+                <span class="tag tag--html">HTML</span>
+                <span class="tag tag--css">CSS</span>
               </div>
             </div>
           </div>
