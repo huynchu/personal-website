@@ -21,16 +21,8 @@
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 1px;
-  margin-bottom: 3rem;
+  margin-bottom: 4.2rem;
   color: #eee;
-}
-
-.secondary-heading--dark {
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  margin-bottom: 2.4rem;
-  color: #333;
 }
 
 .tertiary-heading {
@@ -40,8 +32,8 @@
   color: #b197fc;
 }
 
-.btn:link,
-.btn:visited {
+.link:link,
+.link:visited {
   display: inline-block;
   color: #b197fc;
   text-decoration: none;
@@ -50,13 +42,61 @@
   font-size: 1.4rem;
   padding-bottom: 0.2rem;
 
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
-.btn:hover,
-.btn:active {
+.link:hover,
+.link:active {
   color: #9775fa;
   border-bottom: 2px solid transparent;
+}
+
+.tag {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  font-weight: 600;
+}
+
+.tag--html {
+  background-color: #ff6b6b;
+}
+
+.tag--css {
+  background-color: #74c0fc;
+}
+
+.tag--js {
+  background-color: #ffe066;
+}
+
+.tag--react {
+  background-color: #66d9e8;
+}
+
+.tag--express {
+  background-color: #ffc078;
+}
+.tag--node {
+  background-color: #69db7c;
+}
+
+.tag--mongo {
+  background-color: #63e6be;
+}
+
+.tag--angular {
+  background-color: #f06595;
+}
+
+.tag--redux {
+  background-color: #4dabf7;
+}
+
+.tag--python {
+  background-color: #e599f7;
 }
 
 .inline-block {
@@ -69,4 +109,17 @@
 
 .margin-right-md {
   margin-right: 2.4rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.2rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
 }
