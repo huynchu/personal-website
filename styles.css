@@ -499,6 +499,10 @@ body {
   color: #444;
 }
 
+.project-icon-link.small {
+  font-size: 2rem;
+}
+
 .project-desc-text {
   font-size: 1.4rem;
   font-weight: 500;
